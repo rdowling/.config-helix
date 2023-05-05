@@ -1,0 +1,21 @@
+
+copied from https://github.com/helix-editor/helix/blob/master/languages.toml to my languages.toml file in ~/.config/helix
+
+ran `hx --grammar fetch` and then `hx --grammar build`
+
+(for me hx --grammar build failed as I needed xcrun https://developer.apple.com/forums/thread/711512)
+
+installed `xcrun` from the command line: `> xcode-select --install`
+
+installed zls from https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
+
+```
+git clone https://github.com/zigtools/zls
+cd zls
+zig build -Doptimize=ReleaseSafe # <-- this failed for me, so I dropped the `-Doptimize=ReleaseSafe` piece
+```
+
+next I added `zls` to PATH in .zshrc: 
+`export PATH=$PATH:~/Dev/Libs/zls`
+
+
