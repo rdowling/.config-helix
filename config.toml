@@ -25,7 +25,11 @@ wrap-indicator = ""  # set wrap-indicator to "" to hide it
 [keys.normal]
 0 = "goto_line_start" # vim keybinding: zero goes to start of line
 C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
+C-r = ":config-reload"
 C-o = ":open ~/.config/helix/config.toml" # Maps Ctrl-o to opening of the helix config file
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-n = "page_down"
 C-p = "page_up"
+D = ["ensure_selections_forward", "extend_to_line_end", "delete_selection"]
+Y = ["extend_to_line_bounds", "yank"]
+C-k = "kill_to_line_end"
