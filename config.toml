@@ -4,7 +4,7 @@ theme = "varua"
 [editor]
 line-number = "absolute"
 mouse = false
-auto-pairs = false
+# auto-pairs = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -13,6 +13,18 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+# parents = false
+# ignore = false
+git-ignore = false
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'<' = '>'
+# '"' = '"'
+# '`' = '`'
+
 
 [editor.soft-wrap]
 enable = true
